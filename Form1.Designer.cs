@@ -1,7 +1,7 @@
 ﻿
 namespace PipeFlowCalc
 {
-    partial class Form1
+    partial class pipeFlowCalcForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -36,17 +36,13 @@ namespace PipeFlowCalc
             scheduleComboBox = new ComboBox();
             nominalSizeComboBox = new ComboBox();
             calculateMaxFlowRateButton = new Button();
-            outerDiameterLabel = new Label();
-            outerDiameterTextBox = new TextBox();
-            innerDiameterLabel = new Label();
-            innerDiameterTextBox = new TextBox();
             gpmFlowRateLabel = new Label();
             gpmFlowRateTextBox = new TextBox();
             SuspendLayout();
             // 
             // velocityTextBox
             // 
-            velocityTextBox.Location = new Point(917, 204);
+            velocityTextBox.Location = new Point(917, 312);
             velocityTextBox.Name = "velocityTextBox";
             velocityTextBox.Size = new Size(250, 47);
             velocityTextBox.TabIndex = 3;
@@ -54,7 +50,7 @@ namespace PipeFlowCalc
             // scheduleLabel
             // 
             scheduleLabel.AutoSize = true;
-            scheduleLabel.Location = new Point(80, 160);
+            scheduleLabel.Location = new Point(80, 268);
             scheduleLabel.Name = "scheduleLabel";
             scheduleLabel.Size = new Size(139, 41);
             scheduleLabel.TabIndex = 0;
@@ -63,7 +59,7 @@ namespace PipeFlowCalc
             // nominalSizeLabel
             // 
             nominalSizeLabel.AutoSize = true;
-            nominalSizeLabel.Location = new Point(496, 160);
+            nominalSizeLabel.Location = new Point(496, 268);
             nominalSizeLabel.Name = "nominalSizeLabel";
             nominalSizeLabel.Size = new Size(191, 41);
             nominalSizeLabel.TabIndex = 0;
@@ -72,7 +68,7 @@ namespace PipeFlowCalc
             // velocityLabel
             // 
             velocityLabel.AutoSize = true;
-            velocityLabel.Location = new Point(917, 160);
+            velocityLabel.Location = new Point(917, 268);
             velocityLabel.Name = "velocityLabel";
             velocityLabel.Size = new Size(192, 41);
             velocityLabel.TabIndex = 1;
@@ -83,7 +79,7 @@ namespace PipeFlowCalc
             scheduleComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             scheduleComboBox.FormattingEnabled = true;
             scheduleComboBox.Items.AddRange(new object[] { "40", "80", "120" });
-            scheduleComboBox.Location = new Point(80, 204);
+            scheduleComboBox.Location = new Point(80, 312);
             scheduleComboBox.Name = "scheduleComboBox";
             scheduleComboBox.Size = new Size(302, 49);
             scheduleComboBox.TabIndex = 2;
@@ -93,14 +89,14 @@ namespace PipeFlowCalc
             // 
             nominalSizeComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
             nominalSizeComboBox.FormattingEnabled = true;
-            nominalSizeComboBox.Location = new Point(496, 202);
+            nominalSizeComboBox.Location = new Point(496, 310);
             nominalSizeComboBox.Name = "nominalSizeComboBox";
             nominalSizeComboBox.Size = new Size(302, 49);
             nominalSizeComboBox.TabIndex = 4;
             // 
             // calculateMaxFlowRateButton
             // 
-            calculateMaxFlowRateButton.Location = new Point(80, 302);
+            calculateMaxFlowRateButton.Location = new Point(82, 452);
             calculateMaxFlowRateButton.Name = "calculateMaxFlowRateButton";
             calculateMaxFlowRateButton.Size = new Size(1087, 58);
             calculateMaxFlowRateButton.TabIndex = 5;
@@ -108,44 +104,10 @@ namespace PipeFlowCalc
             calculateMaxFlowRateButton.UseVisualStyleBackColor = true;
             calculateMaxFlowRateButton.Click += calculateMaxFlowRateButton_Click;
             // 
-            // outerDiameterLabel
-            // 
-            outerDiameterLabel.AutoSize = true;
-            outerDiameterLabel.Location = new Point(77, 496);
-            outerDiameterLabel.Name = "outerDiameterLabel";
-            outerDiameterLabel.Size = new Size(223, 41);
-            outerDiameterLabel.TabIndex = 6;
-            outerDiameterLabel.Text = "Outer Diameter";
-            // 
-            // outerDiameterTextBox
-            // 
-            outerDiameterTextBox.Location = new Point(321, 496);
-            outerDiameterTextBox.Name = "outerDiameterTextBox";
-            outerDiameterTextBox.ReadOnly = true;
-            outerDiameterTextBox.Size = new Size(308, 47);
-            outerDiameterTextBox.TabIndex = 7;
-            // 
-            // innerDiameterLabel
-            // 
-            innerDiameterLabel.AutoSize = true;
-            innerDiameterLabel.Location = new Point(77, 549);
-            innerDiameterLabel.Name = "innerDiameterLabel";
-            innerDiameterLabel.Size = new Size(215, 41);
-            innerDiameterLabel.TabIndex = 8;
-            innerDiameterLabel.Text = "Inner Diameter";
-            // 
-            // innerDiameterTextBox
-            // 
-            innerDiameterTextBox.Location = new Point(321, 549);
-            innerDiameterTextBox.Name = "innerDiameterTextBox";
-            innerDiameterTextBox.ReadOnly = true;
-            innerDiameterTextBox.Size = new Size(308, 47);
-            innerDiameterTextBox.TabIndex = 9;
-            // 
             // gpmFlowRateLabel
             // 
             gpmFlowRateLabel.AutoSize = true;
-            gpmFlowRateLabel.Location = new Point(77, 602);
+            gpmFlowRateLabel.Location = new Point(310, 161);
             gpmFlowRateLabel.Name = "gpmFlowRateLabel";
             gpmFlowRateLabel.Size = new Size(238, 41);
             gpmFlowRateLabel.TabIndex = 10;
@@ -153,23 +115,19 @@ namespace PipeFlowCalc
             // 
             // gpmFlowRateTextBox
             // 
-            gpmFlowRateTextBox.Location = new Point(321, 602);
+            gpmFlowRateTextBox.Location = new Point(554, 161);
             gpmFlowRateTextBox.Name = "gpmFlowRateTextBox";
             gpmFlowRateTextBox.ReadOnly = true;
             gpmFlowRateTextBox.Size = new Size(308, 47);
             gpmFlowRateTextBox.TabIndex = 11;
             // 
-            // Form1
+            // pipeFlowCalcForm
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1258, 739);
+            ClientSize = new Size(1264, 685);
             Controls.Add(gpmFlowRateTextBox);
             Controls.Add(gpmFlowRateLabel);
-            Controls.Add(innerDiameterTextBox);
-            Controls.Add(innerDiameterLabel);
-            Controls.Add(outerDiameterTextBox);
-            Controls.Add(outerDiameterLabel);
             Controls.Add(calculateMaxFlowRateButton);
             Controls.Add(nominalSizeComboBox);
             Controls.Add(velocityTextBox);
@@ -177,8 +135,8 @@ namespace PipeFlowCalc
             Controls.Add(velocityLabel);
             Controls.Add(nominalSizeLabel);
             Controls.Add(scheduleLabel);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "pipeFlowCalcForm";
+            Text = "Pipe Flow Calculator";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -197,10 +155,6 @@ namespace PipeFlowCalc
         private TextBox velocityTextBox;
         private ComboBox nominalSizeComboBox;
         private Button calculateMaxFlowRateButton;
-        private Label outerDiameterLabel;
-        private TextBox outerDiameterTextBox;
-        private Label innerDiameterLabel;
-        private TextBox innerDiameterTextBox;
         private Label gpmFlowRateLabel;
         private TextBox gpmFlowRateTextBox;
     }

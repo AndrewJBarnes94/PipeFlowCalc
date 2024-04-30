@@ -13,6 +13,8 @@ namespace PipeFlowCalc
         {
             if (e.KeyCode == Keys.Enter)
             {
+                e.Handled = true;
+                e.SuppressKeyPress = true;
                 calculateMaxFlowRateButton_Click(this, new EventArgs());
             }
         }
